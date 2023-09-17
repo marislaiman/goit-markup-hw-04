@@ -85,6 +85,7 @@ img {
   display: block;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
 }
 
 .link-nav::after {
@@ -288,9 +289,14 @@ img {
   gap: 24px;
 }
 
-.our-team-contacts-link {
+.our-team-contacts-list {
   width: 40px;
   height: 40px;
+}
+
+.our-team-contacts-link {
+  height: 100%;
+  width: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
@@ -298,6 +304,7 @@ img {
   align-items: center;
   cursor: pointer;
   margin-top: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-contacts-link:hover,
@@ -415,6 +422,8 @@ img {
 .icons-social-media {
   width: 40px;
   height: 40px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link {
@@ -425,10 +434,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #f4f4fd;
 }
 
 .social-media-link:hover,
 .social-media-link:focus {
   background-color: #31d0aa;
+}
+
+.social-media-icon-img {
+  fill: #f4f4fd;
 }
